@@ -1,0 +1,67 @@
+/********************************************************************************************************************************\
+    01 TypeScript
+        TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+    @ Why TypeScript
+        ^ Avoid bugs in development .
+        ^ Increase development Speed .
+        ^ Additional features (like enums,interface,property modifier) .
+    @ Can we run TypeScript in production
+        ^ No we can't run typescript on production , we only use typescript on development it's help in typo error , Autocomplete etc.
+    
+
+    /*****************************************************************************************************************************\
+    @ INSTALLATION OF TYPESCRIPT
+        ^ install node js .
+        ^ Run command " npm i -g typescript " .
+        ^ Run this command after installation " tsc --help " .
+
+    @ Run TypeScript
+        ^ Run command " tsc filepath.ts "   .
+        ^ After that we get a js file   .
+        ^ Run command " node filepath.js  " .
+
+
+/********************************************************************************************************************************\
+    02 Type Alias
+        ^ Type Aliases allow defining types with a custom name (an Alias).
+            * Example = number , string , Array<type>, boolean
+            * Custom Type = type CustomType = {name:string , age:number , address?:string}
+            * Function return type = function fnName(params : type) : type {return params}
+            * Union type = variableName : string | number
+            8 Narrowing = check in union which type is passed in union variable using if else type
+
+
+
+/********************************************************************************************************************************\
+    03 interfaces
+        ^ Interfaces are similar to type aliases, except they only apply to object types.
+            * Example = interface TypeName { email : string, password : string }
+
+        ^ difference between interface and type in typescript
+            * Types in TypeScript are more flexible and can define primitive, intersection, union, tuple, or different types of data,
+              while interfaces are used to describe the shape of an object.
+        
+        ^ extends in interface
+            * " extends keyword " will be used for Interface Inheritance (or Class Inheritance)
+        
+        
+/********************************************************************************************************************************\
+    04 Generics
+       ^ Generics allow creating 'type variables' which can be used to create classes, functions & type aliases
+        that don't need to explicitly define the types that they use.
+            * Generics makes it easier to write reusable code. 
+
+
+/********************************************************************************************************************************\
+    * Ts config
+        ^ Config command's
+            * ` tsc --init `
+        ^ complie command
+            * in tsconfig.json find and set it on ./dist  = " outDir " : " ./dist " the run " tsc " in cmd
+            * " include " : ["src/**/*"], " exclude " : ["node_modules" , "**/*.spec.ts"]
+
+/********************************************************************************************************************************\
+    05 TypeScript With React js
+
+
+\********************************************************************************************************************************/
